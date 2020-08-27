@@ -3,5 +3,7 @@ Overparameterization and overfitting are common concerns when designing and trai
 
 ![alt text](https://github.com/malena1906/Pruning-Algorithms-with-SMGD-in-Keras/blob/master/Figure1TowardsEfficientNetworkArchitectures.png?raw=true)
 
+![alt text](https://github.com/malena1906/Pruning-Algorithms-with-SMGD-in-Keras/blob/master/pareto-front-with-knee.png?raw=true)
+
 
 The Stochastic Multi Gradient Descent Algorithm implementation in Python3 is for usage with Keras and adopted from paper of S. Liu and L. N. Vicente: "The stochastic multi-gradient algorithm for multi-objective optimization and its application to supervised machine learning". It is combined with weight pruning strategies to reduce network complexity and inference time.
