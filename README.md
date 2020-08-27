@@ -6,7 +6,7 @@ Overparameterization and overfitting are common concerns when designing and trai
 
 
 The Stochastic Multi-Gradient Descent Algorithm implementation in Python3 is for usage with Keras and adopted from paper:
-S. Liu and L. N. Vicente: "The stochastic multi-gradient algorithm for multi-objective optimization and its application to supervised machine learning". 
+S. Liu and L. N. Vicente, The stochastic multi-gradient algorithm for multi-objective optimization and its application to supervised machine learning, ISE Technical Report 19T-011, Lehigh University.
 
 It is combined with weight pruning strategies to reduce network complexity and inference time and extended to Keras optimizers Adam and RMSProp.
 Experimental Results for the combination of pruning and biobjective training can be found in: 
