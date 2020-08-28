@@ -31,7 +31,7 @@ If you use the code in your research, please cite:
 # Run
 
 Requirements:
-    * python3, keras 3.3.1 (exact version!), tensorflow 1.14.0
+    python3, keras 3.3.1 (exact version!), tensorflow 1.14.0
 
 # Models
 
