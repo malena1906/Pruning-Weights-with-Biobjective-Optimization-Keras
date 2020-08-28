@@ -15,3 +15,27 @@ Reiners, M., Klamroth, K., Stiglmayr, M., 2020, Efficient and Sparse Neural Netw
 <p align="center">
   <img src="https://github.com/malena1906/Pruning-Algorithms-with-SMGD-in-Keras/blob/master/pareto-front-with-knee.png?raw=true" />
 </p>
+
+# Citation
+
+If you use the code in your research, please cite:
+
+	@inproceedings{reiners20biobjpruning,
+	  title={Efficient and Sparse Neural Networks by Pruning Weights in a Multiobjective Learning Approach},
+	  author={Reiners, Malena and Klamroth, Kathrin and Stiglmayr, Michael},
+	  journal={Computers and Operations Research},
+	  notes={submitted 08/2020},
+	  year={2020}
+	}
+
+# Run
+
+Requirements:
+    * python3, keras 3.3.1 (exact version!), tensorflow 1.14.0
+
+# Models
+
+LeNet-5 for MNIST
+
+VGG for CIFAR10
+
