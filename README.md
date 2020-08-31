@@ -24,7 +24,7 @@ If you use the code in your research, please cite:
 	  title={Efficient and Sparse Neural Networks by Pruning Weights in a Multiobjective Learning Approach},
 	  author={Reiners, Malena and Klamroth, Kathrin and Stiglmayr, Michael},
 	  journal={Computers and Operations Research},
-	  notes={to be submitted 08/2020},
+	  notes={submitted 08/2020},
 	  year={2020}
 	}
 
