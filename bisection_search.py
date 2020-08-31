@@ -218,7 +218,7 @@ for candidate in candidates:
     candidate['obj value'] = np.array(f[:2])
 candidates_history= candidates.copy() # collect all considered objective values 
 
-### start the dichotomic search  --------------------------------------------------------------------------------------
+### start the bisection search  --------------------------------------------------------------------------------------
 for level in range(level):
     """
     list layout starting with values
@@ -262,7 +262,6 @@ for level in range(level):
 
     plt.legend([hist,curr],['history','current'],loc='upper right')
 
-    # plt.axis('equal')
     plt.title("Bisection Search Level " + str(level+1))
     plt.xlabel('CE Loss on Test Data')
     plt.ylabel('L1 Loss on Test Data')
