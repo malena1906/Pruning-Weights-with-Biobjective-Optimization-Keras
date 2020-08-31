@@ -108,6 +108,7 @@ print("The learning rate is" + lr )
 # cifar10= True
 # learning_rate=float(sys.argv[1])
 # pruning= False
+# optimizers=['multiadam', 'multi', 'adam', 'sgd']
 
 # Define Weight Update for prunign weights
 def update_weights(weight_matrix, threshold):
@@ -138,7 +139,7 @@ class TestCallback(Callback):
         loss_values.append(loss)
         accuracy_values.append(acc)
 
-# Define learning rate schedule for MNIST
+# Define learning rate schedule (LRS) for MNIST
 def lr_schedule_mnist(epoch):
     lrate = learning_rate
     lrate_e = 0.1*learning_rate
@@ -166,8 +167,8 @@ x_train, y_train, x_test, y_test, train_data,input_shape, epochs, num_classes = 
 if mnist: # test performance of MAdam and Adam optimizer on the same problem
     for opt in optimizers:
         # start with the same init weights
-        seed(1)
-        set_random_seed(2)
+        #seed(1)
+        #set_random_seed(2)
         # collect values while training (in evaluation mode)
         loss1_values = []
         loss2_values = []
@@ -575,8 +576,8 @@ elif cifar10: # test performance of MRMSProp and RMSProp optimizer on the same p
             model.compile(optimizer=SGD(learning_rate=learning_rate, momentum=momentum, decay=decay_rate),loss='sparse_categorical_crossentropy',metrics=['accuracy'])
         
         elif opt == 'rms':
-            weight_decay=1e-6
-            lambdas=0.03
+            weight_decay=1e-6 ##conv
+            lambdas=0.03 ##dense
             learning_rate_rmsprop=learning_rate*0.1
             model=vggnetregmodel(input_shape= input_shape, weight_decay=weight_decay,lambdas=lambdas)
             model.compile(optimizer=RMSprop(learning_rate=learning_rate_rmsprop),loss='sparse_categorical_crossentropy',metrics=['accuracy'])
