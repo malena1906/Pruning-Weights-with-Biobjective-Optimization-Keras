@@ -62,14 +62,6 @@ from MultiobjectiveClasses import Multi
 from CustomLosses import L1loss, L2loss, L1lossDense, L2lossConv, L1L2lossDenseConv
 from CustomModels import lenet5multimodel, lenet5regmodel, vggnetmultimodel, vggnetregmodel, get_data, update_weights
 
-### Set up GPU ### private configs ## to be deleted 
-tf_config= tf.ConfigProto()
-os.environ['CUDA_VISIBLE_DEVICES']= '0'
-tf_config.gpu_options.per_process_gpu_memory_fraction=0.5
-allow_soft_placement=True
-tf_config.gpu_options.allow_growth= True
-set_session(tf.Session(config=tf_config))
-
 ### Read in all information
 learning_rate=float(sys.argv[1])
 mnist= bool(True)
