@@ -66,14 +66,6 @@ from numpy.random import seed
 #seed(1)
 #set_random_seed(2)
 
-### Set up GPU ### private configs
-tf_config= tf.ConfigProto()
-os.environ['CUDA_VISIBLE_DEVICES']= '0'
-tf_config.gpu_options.per_process_gpu_memory_fraction=0.5
-allow_soft_placement=True
-tf_config.gpu_options.allow_growth= True
-set_session(tf.Session(config=tf_config))
-
 ### Customized inputs 
 m=input("Please choose a dataset to train: mnist or cifar10? ")
 print( "We will train on: " ,m)
@@ -110,12 +102,14 @@ lr=input( "Please choose a starting learning rate: ")
 learning_rate=float(lr)
 
 print("The learning rate is" + lr )
+
+### Uncomment if you want to use the settings without a terminal input
 # mnist= False
 # cifar10= True
 # learning_rate=float(sys.argv[1])
 # pruning= False
 
-# Define Weight Update for PRUNING
+# Define Weight Update for prunign weights
 def update_weights(weight_matrix, threshold):
     sparsified_weights = []
     for w in weight_matrix:
