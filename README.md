@@ -19,6 +19,7 @@ Reiners, M., Klamroth, K., Stiglmayr, M., 2020, Efficient and Sparse Neural Netw
 # Citation
 
 If you use the code in your research, please cite:
+https://arxiv.org/abs/2008.13590
 
 	@article{reiners20biobjpruning,
 	  title={Efficient and Sparse Neural Networks by Pruning Weights in a Multiobjective Learning Approach},
@@ -38,4 +39,5 @@ Requirements:
 LeNet-5 for MNIST
 
 VGG for CIFAR10
+
 
