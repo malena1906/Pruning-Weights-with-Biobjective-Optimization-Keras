@@ -16,7 +16,7 @@
                and for the success using different extensions and combine the MOP training with pruning weights:
                
                Reiners, M., Klamroth, K., Stiglmayr, M., 2020, Efficient and Sparse Neural Networks by Pruning 
-               Weights in a Multiobjective Learning Approach, ARXIV LINK HERE
+               Weights in a Multiobjective Learning Approach, https://arxiv.org/abs/2008.13590
 
                This is the main script for demonstration purpose. Most of the plots and experimental results can be traced here.
 
