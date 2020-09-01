@@ -16,7 +16,7 @@
                For more information see our paper: 
                
                Reiners, M., Klamroth, K., Stiglmayr, M., 2020, Efficient and Sparse Neural Networks by Pruning 
-               Weights in a Multiobjective Learning Approach, ARXIV LINK HERE
+               Weights in a Multiobjective Learning Approach, https://arxiv.org/abs/2008.13590
 
  Input(s)    : The MAdam Algorithm to solve the multiobjective optimization problem with two loss 
                functions, in this script it is combined with pruning neural networks weights. 
