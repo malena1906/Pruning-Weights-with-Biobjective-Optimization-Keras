@@ -14,13 +14,13 @@
                For more information see our paper: 
                
                Reiners, M., Klamroth, K., Stiglmayr, M., 2020, Efficient and Sparse Neural Networks by Pruning 
-               Weights in a Multiobjective Learning Approach, ARXIV LINK HERE
+               Weights in a Multiobjective Learning Approach, https://arxiv.org/abs/2008.13590
 
  Input(s)    : The MAdam Algorithm to solve the multiobjective optimization problem with two loss 
                functions, in this script it is combined with pruning neural networks weights. 
                Please note that for generating a Pareto front, the weights given for the loss functions remain constant over all 
                training epochs (param multi=False) - there is no own calculation in the algorithm as suggested by
-               S. Liu and L. N. Vicente
+               S. Liu and L. N. Vicente --- therefore it is techniqually still the SGD algorithm behind it.
 
  Output(s)   : A Pareto optimal 'Knee' point for the trade-off between both objective functions (loss functions).
                Pruning success is involved.
